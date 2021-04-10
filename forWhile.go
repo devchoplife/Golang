@@ -18,6 +18,19 @@ func main() {
 	//break - exits and goes  to te end of the loop
 	//continue - skips everything below it and goes back to the begining of the loop
 
-	for {
+	for x := 0; x <= 1000; x++ {
+		if x != 0 && x%3 == 0 && x%7 == 0 && x%9 == 0 {
+			fmt.Println(x)
+			continue
+		}
+		//fmt.Println("Not Valid") - Here is an example of using continue
+		//continue makes the for loop keep running until x gets to a thousand
+	}
+
+	for x := 0; x <= 1000; x++ {
+		if x != 0 && x%3 == 0 && x%7 == 0 && x%9 == 0 {
+			fmt.Println(x)
+			break //break here prints the nfirst number that satisfies this condition
+		}
 	}
 }
