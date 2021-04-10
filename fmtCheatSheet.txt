@@ -1,0 +1,55 @@
+FMT CHEAT SHEET
+===============================================
+
+General
+++++++++++++++++++++++++++++++
+- %v (value in default value)
+- %T (type of variable)
+- %% (literal %)
+
+Boolean 
+++++++++++++++++++++++++++++++
+- %t (true or false)
+
+Integer 
+++++++++++++++++++++++++++++++
+- %b (base 2)
+- %o (base 8)
+- %d (base 10)
+- %x (base 16) - use capital X to get the format in all Caps 
+
+
+Floating Points
++++++++++++++++++++++++++++++++
+- %e (scientific notation)
+- %f/%F (decimal - no exponent)
+- %g (for large exponents)
+
+
+Strings
++++++++++++++++++++++++++++++++
+- %s (default)
+- %q (double quoted string)
+
+
+Width and Precision
+++++++++++++++++++++++++++++++++
+- %f (default width,default precision) i.e rounds number to a whole number
+- %9f (width 9, default precision)
+- %.2f (default width, precison 2)
+- %9.2f (width 9, precision 2)
+- %0.f (width 9, precision 0)
+
+Note: Use - before the values to invert them
+
+
+Padding
++++++++++++++++++++++++++++++++++
+- %09d (pads digits to length 0 with preceeding 0s)
+- %-4d (pads with spaces, width 4, left justified)
+
+
+Methods
+++++++++++++++++++++++++++++++++
+- Sprintf() - format without printing
+- Printf() - format with printing 
