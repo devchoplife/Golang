@@ -1,0 +1,5 @@
+CONDITIONAL OPERATORS 
+================================
+- || (OR)
+- ! (NOT)
+- && (AND)
