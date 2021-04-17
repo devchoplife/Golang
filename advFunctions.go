@@ -12,6 +12,11 @@ func test3(myFunc func(int) int) {
 	fmt.Println(myFunc(7))
 }
 
+//Function closure
+func returnFunc(x string) func() {
+	return func() { fmt.Println(x) }
+}
+
 func main() {
 	x := test
 	x()
@@ -20,8 +25,15 @@ func main() {
 	//main is already a function so we will define another function here
 	test2 := func(x int) int {
 		return x * -1
-	}(8) //this calls the function inline
+	}
+
+	test4 := func(x int) int {
+		return x * 7
+	}
 	fmt.Println(test2)
 
-	test3(test2)
+	test3(test4)
+
+	returnFunc("Hello!!!")()
+	returnFunc("Goodbye!!!")()
 }
